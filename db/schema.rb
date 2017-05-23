@@ -10,14 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170212030750) do
+ActiveRecord::Schema.define(version: 20170522131044) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
     t.string   "upc"
-    t.string   "image_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "image"
+    t.         "description"
   end
 
 end

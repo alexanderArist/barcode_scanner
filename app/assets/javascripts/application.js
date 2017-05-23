@@ -70,4 +70,16 @@ function load_quagga(){
 
   }
 };
+
+var ready;
+ready = function () {
+    if($('#counter').length>0 ){
+        setTimeout(function(){
+//            console.log("works1")
+                window.location.href = "http://83.212.85.246:8181";
+        },6000);
+    }
+}
+
+$(document).on('turbolinks:load',ready);
 $(document).on('turbolinks:load', load_quagga);

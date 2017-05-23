@@ -67,7 +67,7 @@ class ProductsController < ApplicationController
     unless @product.new_record?
       redirect_to @product
     else
-      redirect_to new_product_path(upc: params[:upc])
+      redirect_to root_path
     end
   end
 
@@ -79,6 +79,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :upc, :image_url)
+      params.require(:product).permit(:name, :upc,:description, :image)
     end
 end
