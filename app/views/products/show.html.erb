@@ -1,13 +1,13 @@
 <div class="row">
   <div class="col-md-6"  >
   <br/>
-  <%= image_tag @product.image, class: "border"%>
+  <%= image_tag @product.image_url(:thumb)%>
   </div>
   <div class="col-md-6">
-<h1 class='text-center'><%= @product.name %></h1>
-<h2 class='text-center'><small><%= @product.upc %></small></h2>
-<h4 class="text-center">  <%= @product.description%></h4>
+<%= sanitize @product.name %>
+<h4 class="text-left">  <%= sanitize @product.description%></h4>
+
   
   </div>
 </div>
-<div id="counter"></div>
+<!-- <div id="counter"></div> -->

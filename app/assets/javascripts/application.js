@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require quagga
+//= require ckeditor/init
 //= require_tree .
 
 function order_by_occurrence(arr) {
@@ -77,7 +78,7 @@ ready = function () {
         setTimeout(function(){
 //            console.log("works1")
                 window.location.href = "http://83.212.85.246:8181";
-        },6000);
+        },20000);
     }
 }
 

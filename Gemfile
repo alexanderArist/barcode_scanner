@@ -10,6 +10,7 @@ gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'ckeditor'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
